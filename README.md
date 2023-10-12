@@ -42,10 +42,10 @@ Os dados obtidos no benchmarking contém as seguintes informações:
 # Premissas de negócio
 * Para análise das vendas entre empresas foram desconsiderados dados da Amazon, kmart e barcodable pela quantidade de dados
 * Para estudo da elasticidade de preços foram considerados apenas os produtos da Best Buy da categoria "Speaker/Portable/Bluetooth"
-* No estudo da elasticidade são foram considerados outros fatores, como tempo, contexto atual, concorrência, produtos substitutos e complementares, segmentação de clientes, políticas governamentais
+* No estudo da elasticidade não foram considerados outros fatores, como tempo, contexto atual, concorrência, produtos substitutos e complementares, segmentação de clientes, políticas governamentais
 
-# Planejamento
-O planejamento da solução foi dividido em três etapas:
+# Planejamento da solução
+
 ### _Entendendo o problema de negócio_
 Entender a necessidade do time de vendas e responder as questões sobre as empresas do ramo.
 
@@ -90,12 +90,13 @@ Considerando a Best Buy, a semana com maior quantidade de vendas foi a 31 (final
 Para deploy foi utilizada a biblioteca Streamlit para desenvolvimento de dashboard online, com aplicação da elasticidade de preço dos produtos analisados, estatísticas individuais e elasticidade cruzada com outros produtos da categoria.
 Clique no botão abaixo e interaja alterando o valor de desconto ou acréscimo:
 
-[<img style="display: block; margin-right: auto; margin-left: auto" src="images/streamlit-logo.png" alt="Streamlit" width="250" />](https://app.powerbi.com/view?r=eyJrIjoiN2Y3ZTExOWQtOTdkMS00YTA0LTgyOWUtMzIxNzQ1ZWIyMjM3IiwidCI6ImRjNzFjN2RmLTFiMjItNDFiNS05NDFkLTcyNTA4YTM4NzQ2NiJ9)
+[<img style="display: block; margin-right: auto; margin-left: auto" src="images/streamlit-logo.png" alt="Streamlit" width="250" />](https://price-elasticity.streamlit.app/)
 
 # Conclusão
 O objetivo de analisar as informações para responder as perguntas de negócio foi atendido, assim como a entrega do dashboard para melhor entendimento da relação de produtos e dados, onde é possível visualizar o retorno esperado em diferentes cenários.
 
 # Próximos passos
 * Obter mais dados dos produtos analisados
+* Analisar regressão de produtos com comportamentos fora do padrão
 * Analisar outros fatores que influenciam na venda dos produtos
 * Analisar a relação entre produtos de outras marcas (elasticidade cruzada)
